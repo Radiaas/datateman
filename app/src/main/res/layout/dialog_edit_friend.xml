@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_pictures"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/black"
+        android:contentDescription="@string/image"
+        android:layout_marginBottom="@dimen/_5sdp"/>
+
+    <EditText
+        android:id="@+id/et_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_edit_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/school"
+        android:inputType="text"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_edit_hobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hobby"
+        android:inputType="text"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/gallery"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/camera"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_margin="@dimen/_13sdp"
+        android:text="@string/delete_image"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>
